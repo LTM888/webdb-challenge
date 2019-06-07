@@ -52,7 +52,7 @@ function findById(id) {
     );
 }
 
-function add() {
+function add(action) {
   return db('actions')
     .insert(action, 'id')
     .then(([id]) => {

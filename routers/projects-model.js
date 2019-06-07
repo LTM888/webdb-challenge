@@ -18,7 +18,7 @@ module.exports = {
       .first();
   }
   
-  function add(projects) {
+  function add(project) {
     return db('projects')
         .insert('projects')
         .then(([id]) => {
