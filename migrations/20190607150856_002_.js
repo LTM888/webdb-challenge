@@ -11,9 +11,9 @@ exports.up = function(knex, Promise) {
         .onDelete("CASCADE")
         .onUpdate("CASCADE");
   
-      tbl.string("description", 1000).notNullable();
+      tbl.string("description", 1060).notNullable();
   
-      tbl.string("notes", 1000).notNullable();
+      tbl.string("notes", 1060).notNullable();
   
       tbl.boolean("completed").defaultTo(false); 
   

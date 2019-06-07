@@ -8,7 +8,7 @@ const server = express();
 
 server.use(helmet());
 server.use(express.json());
-server.use('/api/', projectsRouter)
+server.use('/api/', projectsRouter);
 server.use('/api/', actionsRouter);
 server.get('/', (req, res) => {
     res.status(200).json({ message: " and i am here "});

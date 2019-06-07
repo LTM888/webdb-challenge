@@ -19,8 +19,10 @@
   "homepage": "https://github.com/LTM888/webdb-challenge#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "helmet": "^3.18.0",
     "knex": "^0.17.3",
     "nodemon": "^1.19.1",
     "sqlite3": "^4.0.8"
-  }
+  },
+  "devDependencies": {}
 }

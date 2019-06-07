@@ -20,7 +20,7 @@ module.exports = {
   
   function add(project) {
     return db('projects')
-        .insert('projects')
+        .insert(project)
         .then(([id]) => {
             return findById(id)
         })

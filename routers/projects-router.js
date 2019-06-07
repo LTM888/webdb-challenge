@@ -39,6 +39,7 @@ router.post('/projects/', async (req, res) => {
         const inserted = await Projects.add(project);
         res.status(201).json(inserted);
       } catch (error) {
+        console.log(';;;;;;;;;;;;;;;;;;;;;;;'+ error);
         res
           .status(500)
           .json({ message: 'We ran into an error creating the project' });
