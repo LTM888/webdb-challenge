@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const Actions = require('./actions-model');
 
-router.get('/actions/', (req, res ) => {
+router.get('/', (req, res ) => {
     Actions.find()
         .then(actions => {
             res.status(200).json(actions);
@@ -15,7 +15,7 @@ router.get('/actions/', (req, res ) => {
 
 });
 
-router.post('/actions/', (req,res) => {
+router.post('/', (req,res) => {
     Actions.add(req.body)
     .then( added => {
         res.status(200).json(added);

@@ -8,8 +8,9 @@ const server = express();
 
 server.use(helmet());
 server.use(express.json());
-server.use('/api/', projectsRouter);
-server.use('/api/', actionsRouter);
+console.log(';:::::::::::inside the server::::::::')
+server.use('/api/projects', projectsRouter);
+server.use('/api/actions', actionsRouter);
 server.get('/', (req, res) => {
     res.status(200).json({ message: " and i am here "});
 
