@@ -21,7 +21,7 @@ router.post('/actions/', (req,res) => {
         res.status(200).json(added);
     })
     .catch(err => {
-        res
+       res
         .status(500)
         .json({ message: 'We have an Error'});
     });
